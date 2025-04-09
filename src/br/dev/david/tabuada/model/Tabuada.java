@@ -40,9 +40,6 @@ public class Tabuada {
 			contador = contador + 1;
 		}
 		
-		System.out.println("-------------------------");
-		System.out.println("");
-		
 		
 	}
 }
