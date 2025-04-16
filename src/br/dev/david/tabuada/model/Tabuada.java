@@ -33,13 +33,16 @@ public class Tabuada {
 	
 	public void mostrarTabuada() {
 		
+
+		
 		double contador = minimoMultiplicador;
 		while (contador <= maximoMultiplicador) {
 			double produto = multiplicando * contador;
 			System.out.println(multiplicando + " X " + contador + " = " + produto);
 			contador = contador + 1;
+			;
 		}
-		
+		System.out.println("-------------------------");
 		
 	}
 }
