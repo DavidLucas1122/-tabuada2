@@ -31,18 +31,22 @@ public class Tabuada {
 	}
 
 	
-	public void mostrarTabuada() {
+	public String[] mostrarTabuada() {
 		
-
+		double tamanho = (int) (maximoMultiplicador - minimoMultiplicador + 1);
 		
-		double contador = minimoMultiplicador;
-		while (contador <= maximoMultiplicador) {
-			double produto = multiplicando * contador;
-			System.out.println(multiplicando + " X " + contador + " = " + produto);
-			contador = contador + 1;
-			;
+		String[] tabuada = new String[(int) tamanho]; 
+		
+		int indice = 0;
+		while (minimoMultiplicador <= maximoMultiplicador) {
+			double produto = multiplicando * minimoMultiplicador;
+			
+			tabuada[indice] = multiplicando + " X " + minimoMultiplicador + " = " + produto;
+			minimoMultiplicador++;
+			indice++;
+			
 		}
 		System.out.println("-------------------------");
-		
+		return tabuada;
 	}
 }
